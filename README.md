@@ -51,11 +51,13 @@ File Format
 
 To keep things very simple, there is only one file to hold the dataset.
 
+```
 SCHEME
 TABLE 1 BASE
 TABLE 1 JOURNAL
 TABLE 2 BASE
 TABLE 2 JOURNAL
 ...
+```
 
 
