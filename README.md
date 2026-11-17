@@ -41,7 +41,11 @@ If all datum have changed, makes sense to just include the entire record, as ide
 would be more verbose. I suppose it would be that if the length of the serialization of changed columns exceeds the
 length of the record, then just include the record, otherwise the fields.
 
-MOD_VERB/record_ord/field_ord/new_value/field_ord/new_value/...
+The entries in a changeset are in chronological order - so multiple changes to the same field/record can be included in a changeset.
+
+A changeset can be squashed to the minimum number of changes to achieve the end state of the changeset.
+
+table_ord/MOD_VERB/record_ord/field_ord/new_value/field_ord/new_value/...
 
 have a reserved field_ord (ALL_FIELD_ORD) to indicate the entire record
 
